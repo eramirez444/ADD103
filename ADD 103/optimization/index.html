@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Image Optimization — Before & After Gallery</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Web Image Optimization</h1>
+      <p class="tagline">
+        Using my own photos to practice core editing skills in a web workflow.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="intro">
+        <p>
+          For each technique, I’ve included a <strong>Before</strong> and an
+          <strong>After</strong> image, plus notes on what I changed. I also
+          recorded the dimensions, format, and file size for the After version.
+        </p>
+      </section>
+
+      <!-- Technique: Crop -->
+      <section id="crop" class="technique">
+        <h2>Crop</h2>
+        <p class="goal">Goal: remove distractions and improve composition.</p>
+        <div class="pair" role="group" aria-label="Crop comparison">
+          <figure>
+            <div class="label before">Before</div>
+            <img
+              src="images/dogblanket-orig.jpg"
+              alt="Dog in blanket before crop"
+              width="800"
+              height="533"
+            />
+            <figcaption>
+              Original photo — too much background space around the subject.
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="label after">After — Crop</div>
+            <img
+              src="images/dogblanket-after.jpg"
+              alt="Dog in blanket after crop"
+              width="400"
+              height="533"
+            />
+            <figcaption>
+              Cropped to center the dog and remove excess background.
+              <ul class="meta">
+                <li>Dimensions: 400 × 533 px</li>
+                <li>Format: JPG</li>
+                <li>File size: ___ KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Resize -->
+      <section id="resize" class="technique">
+        <h2>Resize</h2>
+        <p class="goal">Goal: scale the image to an appropriate web size.</p>
+        <div class="pair" role="group" aria-label="Resize comparison">
+          <figure>
+            <div class="label before">Before</div>
+            <img
+              src="images/catdog-orig.jpg"
+              alt="Cat and dog before resize"
+              width="1600"
+              height="1067"
+            />
+            <figcaption>Original photo — too large for web use.</figcaption>
+          </figure>
+          <figure>
+            <div class="label after">After — Resize</div>
+            <img
+              src="images/catdog-after.jpg"
+              alt="Cat and dog after resize"
+              width="400"
+              height="533"
+            />
+            <figcaption>
+              Resized to 400 × 533 px for faster loading.
+              <ul class="meta">
+                <li>Dimensions: 400 × 533 px</li>
+                <li>Format: JPG</li>
+                <li>File size: ___ KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Rotate -->
+      <section id="rotate" class="technique">
+        <h2>Rotate</h2>
+        <p class="goal">Goal: fix orientation or straighten the subject.</p>
+        <div class="pair" role="group" aria-label="Rotate comparison">
+          <figure>
+            <div class="label before">Before</div>
+            <img
+              src="images/dogcloseup-orig.jpg"
+              alt="Dog closeup before rotate"
+              width="800"
+              height="533"
+            />
+            <figcaption>Original image — slightly off orientation.</figcaption>
+          </figure>
+          <figure>
+            <div class="label after">After — Rotate</div>
+            <img
+              src="images/dogcloseup-after.jpg"
+              alt="Dog closeup rotated"
+              width="400"
+              height="533"
+            />
+            <figcaption>
+              Rotated to adjust framing and orientation.
+              <ul class="meta">
+                <li>Dimensions: 400 × 533 px</li>
+                <li>Format: JPG</li>
+                <li>File size: ___ KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Flip -->
+      <section id="flip" class="technique">
+        <h2>Flip</h2>
+        <p class="goal">Goal: create a mirrored composition.</p>
+        <div class="pair" role="group" aria-label="Flip comparison">
+          <figure>
+            <div class="label before">Before</div>
+            <img
+              src="images/doghat-orig.jpg"
+              alt="Dog with hat before flip"
+              width="800"
+              height="533"
+            />
+            <figcaption>Original image — regular orientation.</figcaption>
+          </figure>
+          <figure>
+            <div class="label after">After — Flip</div>
+            <img
+              src="images/doghat-after.jpg"
+              alt="Dog with hat flipped"
+              width="400"
+              height="533"
+            />
+            <figcaption>
+              Flipped horizontally to create a mirrored look.
+              <ul class="meta">
+                <li>Dimensions: 400 × 533 px</li>
+                <li>Format: JPG</li>
+                <li>File size: ___ KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Exposure / Contrast -->
+      <section id="exposure" class="technique">
+        <h2>Exposure / Contrast</h2>
+        <p class="goal">Goal: improve brightness and contrast for clarity.</p>
+        <div class="pair" role="group" aria-label="Exposure comparison">
+          <figure>
+            <div class="label before">Before</div>
+            <img
+              src="images/catcouch-orig.jpg"
+              alt="Cat on couch before exposure adjustment"
+              width="800"
+              height="533"
+            />
+            <figcaption>Original photo — a little underexposed.</figcaption>
+          </figure>
+          <figure>
+            <div class="label after">After — Exposure / Contrast</div>
+            <img
+              src="images/catcouch-after.jpg"
+              alt="Cat on couch after exposure adjustment"
+              width="400"
+              height="533"
+            />
+            <figcaption>
+              Increased exposure and contrast for better clarity.
+              <ul class="meta">
+                <li>Dimensions: 400 × 533 px</li>
+                <li>Format: JPG</li>
+                <li>File size: ___ KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Technique: Format / Compression -->
+      <section id="format" class="technique">
+        <h2>Format / Compression</h2>
+        <p class="goal">Goal: export to JPG or WebP at smaller file size.</p>
+        <div class="pair" role="group" aria-label="Format comparison">
+          <figure>
+            <div class="label before">Before</div>
+            <img
+              src="images/catcouch-orig.jpg"
+              alt="Cat on couch original PNG"
+              width="800"
+              height="533"
+            />
+            <figcaption>Original saved in a larger format (PNG).</figcaption>
+          </figure>
+          <figure>
+            <div class="label after">After — Compression</div>
+            <img
+              src="images/catcouch-after.jpg"
+              alt="Cat on couch compressed JPG"
+              width="400"
+              height="533"
+            />
+            <figcaption>
+              Exported as JPG/WebP at ~75% quality for web optimization.
+              <ul class="meta">
+                <li>Dimensions: 400 × 533 px</li>
+                <li>Format: JPG / WebP</li>
+                <li>File size: ___ KB</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Your Name — Course: ADD 103</p>
+    </footer>
+  </body>
+</html>
