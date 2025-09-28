@@ -1,0 +1,91 @@
+/* Global styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: crimson;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the header and divs */
+div,
+header {
+  width: 80%;
+  margin: 20px auto;
+  border: 3px solid red;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+div {
+  min-height: 250px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: crimson;
+}
+
+/* Background section */
+#background {
+  background: url("../images/dogcloseup.jpg") no-repeat center center;
+  background-size: 400px;
+  height: 300px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Image Map */
+#img-map img {
+  display: block;
+  margin: 0 auto;
+  border: 2px double gold;
+}
+
+/* Float sections */
+#float-left img {
+  float: left;
+  margin: 10px;
+  border: 2px double gold;
+}
+
+#float-right img {
+  float: right;
+  margin: 10px;
+  border: 2px double gold;
+}
+
+/* Picture tag */
+#picture-tag img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px double gold;
+}
+
+/* 🔹 Linked Image (plain clickable image, no hover) */
+#linked-image img {
+  border: 2px double gold;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 🔹 Image as Link (styled with hover effects) */
+#img-as-link img {
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s, transform 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-as-link img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}

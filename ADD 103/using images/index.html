@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Images</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Using Images</h1>
+    </header>
+
+    <!-- Background example -->
+    <div id="background">
+      <h2>Background Image</h2>
+      <p>This section has a background image set in CSS (featuring Kobi).</p>
+    </div>
+
+    <!-- Image Map example -->
+    <div id="img-map">
+      <h2>Image Map</h2>
+      <img
+        src="images/catdog.jpg"
+        alt="Sweetie the cat and Daisy the dog on the couch"
+        usemap="#petmap"
+        width="400"
+        height="533"
+      />
+      <map name="petmap">
+        <!-- Sweetie on the left -->
+        <area
+          shape="rect"
+          coords="0,0,200,533"
+          href="https://en.wikipedia.org/wiki/Cat"
+          alt="Sweetie the cat"
+        />
+        <!-- Daisy on the right -->
+        <area
+          shape="rect"
+          coords="200,0,400,533"
+          href="https://en.wikipedia.org/wiki/Dog"
+          alt="Daisy the dog"
+        />
+      </map>
+    </div>
+
+    <!-- Float Left -->
+    <div id="float-left">
+      <h2>Float Left</h2>
+      <img
+        src="images/doghat.jpg"
+        alt="Kobi the white dog wearing a hat"
+        width="200"
+        style="float: left; margin: 10px"
+      />
+      <p>
+        This text wraps around Kobi wearing a hat. The image floats left while
+        text flows on the right.
+      </p>
+    </div>
+
+    <!-- Float Right -->
+    <div id="float-right">
+      <h2>Float Right</h2>
+      <img
+        src="images/dogblanket.jpg"
+        alt="Kobi the white dog wrapped in a blanket"
+        width="200"
+        style="float: right; margin: 10px"
+      />
+      <p>
+        This text wraps around Kobi in his blanket. The image floats right while
+        text flows on the left.
+      </p>
+    </div>
+
+    <!-- Picture Tag (responsive images) -->
+    <div id="picture-tag">
+      <h2>Picture Tag</h2>
+      <picture>
+        <source srcset="images/catcouch.jpg" media="(min-width: 800px)" />
+        <source srcset="images/dogcloseup.jpg" media="(min-width: 400px)" />
+        <img
+          src="images/catdog.jpg"
+          alt="Sweetie the cat and Daisy the dog together"
+        />
+      </picture>
+    </div>
+
+    <!-- Linked Image -->
+    <div id="linked-image">
+      <h2>Linked Image</h2>
+      <a href="https://www.mchenry.edu/" target="_blank">
+        <img
+          src="images/dogblanket.jpg"
+          alt="Kobi the white dog wrapped in a blanket"
+          width="300"
+        />
+      </a>
+      <p>Clicking Kobi links to MCC’s website.</p>
+    </div>
+
+    <!-- Image As Link -->
+    <div id="img-as-link">
+      <h2>Image As Link</h2>
+      <a href="https://www.pokemon.com/" target="_blank">
+        <img
+          src="images/catcouch.jpg"
+          alt="Tilly the black cat sitting on a couch"
+          width="300"
+        />
+      </a>
+      <p>Clicking Tilly links to Pokémon’s website.</p>
+    </div>
+  </body>
+</html>
