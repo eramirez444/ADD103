@@ -1,0 +1,186 @@
+/* === Invisible Woman Force Field Theme (Final Version) === */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top, #e7f6ff 0%, #d0e4ff 100%);
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ===== Shimmer Animation ===== */
+@keyframes phaseGlow {
+  0% {
+    background: linear-gradient(to bottom, #aee6ff, #6fc8ff);
+    box-shadow: 0 0 12px rgba(150, 220, 255, 0.7),
+      0 0 25px rgba(100, 180, 255, 0.4);
+    opacity: 1;
+  }
+  50% {
+    background: linear-gradient(to bottom, #c2f2ff, #85d4ff);
+    box-shadow: 0 0 20px rgba(180, 235, 255, 0.8),
+      0 0 40px rgba(120, 200, 255, 0.6);
+    opacity: 0.85;
+  }
+  100% {
+    background: linear-gradient(to bottom, #aee6ff, #6fc8ff);
+    box-shadow: 0 0 12px rgba(150, 220, 255, 0.7),
+      0 0 25px rgba(100, 180, 255, 0.4);
+    opacity: 1;
+  }
+}
+
+@keyframes rippleWave {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+    filter: blur(1px);
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.3;
+    filter: blur(2px);
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+    filter: blur(3px);
+  }
+}
+
+/* ===== Navigation ===== */
+nav {
+  margin-bottom: 25px;
+}
+
+nav a {
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #aee6ff, #6fc8ff);
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 6px 8px;
+  box-shadow: 0 0 12px rgba(150, 220, 255, 0.6),
+    0 0 30px rgba(100, 180, 255, 0.4);
+  transition: all 0.6s ease;
+  animation: phaseGlow 5s ease-in-out infinite;
+  overflow: hidden;
+}
+
+/* Ripple layer */
+nav a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: radial-gradient(
+    circle,
+    rgba(180, 235, 255, 0.6) 0%,
+    rgba(150, 200, 255, 0) 70%
+  );
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Hover: phase + ripple */
+nav a:hover {
+  opacity: 0.15;
+  transform: scale(1.05);
+  color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 35px rgba(200, 245, 255, 0.4),
+    0 0 60px rgba(200, 245, 255, 0.3);
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 245, 255, 0.3),
+    rgba(150, 200, 255, 0.1)
+  );
+}
+
+nav a:hover::after {
+  opacity: 1;
+  animation: rippleWave 1s ease-out;
+}
+
+/* ===== Headings & Lists ===== */
+h1 {
+  color: #3097ff;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #1b6adf;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+ul a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ul a:hover {
+  color: #00b4ff;
+  text-decoration: underline;
+}
+
+/* ===== Inline "Back to Top" links ===== */
+a.backtop {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2565d0;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a.backtop:hover {
+  color: #00aaff;
+}
+
+/* ===== Floating Arrow Button ===== */
+.backtotop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(to bottom, #aee6ff, #6fc8ff);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(120, 190, 255, 0.6),
+    0 0 30px rgba(100, 180, 255, 0.4);
+  transition: all 0.4s ease;
+  animation: phaseGlow 6s ease-in-out infinite;
+}
+
+.backtotop:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
