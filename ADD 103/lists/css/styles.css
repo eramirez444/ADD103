@@ -1,0 +1,68 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #363336;
+  color: #333333;
+  margin: 40px;
+  line-height: 1.6;
+}
+
+h1,
+h3 {
+  color: #ffd84d;
+}
+
+a {
+  color: #5ac8fa;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: square;
+  color: #5ac8fa; /* soft blue bullets */
+  margin-left: 25px;
+}
+
+ul ul {
+  list-style-type: circle;
+  color: #fca6e9;
+}
+
+ol {
+  list-style-type: upper-roman;
+  color: #ffd84d;
+  margin-left: 25px;
+}
+
+/* Nested ordered lists */
+ul ol {
+  list-style-type: decimal;
+  color: #5ac8fa;
+}
+
+dt {
+  font-weight: bold;
+  color: #ffd84d;
+}
+
+dd {
+  font-style: italic;
+  color: #fca6e9;
+  margin-bottom: 10px;
+}
+
+section {
+  background-color: #d794ce; /* clean white box */
+  border-radius: 14px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(90, 200, 250, 0.25); /* soft blue glow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(252, 166, 233, 0.35); /* pink glow on hover */
+}
