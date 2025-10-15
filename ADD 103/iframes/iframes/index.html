@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iFrames Example</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Two embedded iframes: a website and a YouTube video, with accessible titles and custom CSS." />
+</head>
+<body>
+  <main>
+    <h1>Exploring iFrames</h1>
+    <p class="lede">Two examples below: an embedded website (OpenStreetMap) and an embedded YouTube video. Both include accessible titles and responsive styling.</p>
+
+    <section aria-labelledby="map-heading">
+      <h2 id="map-heading">Embedded Webpage (OpenStreetMap)</h2>
+      <p>This iFrame displays an external webpage designed for embedding: OpenStreetMap's shareable map.</p>
+      <!-- This OpenStreetMap URL is intended for embedding and should load in most browsers -->
+      <iframe
+        class="content-frame"
+        title="OpenStreetMap — Downtown Chicago Map"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-87.644,41.870,-87.620,41.888&layer=mapnik&marker=41.8796,-87.6237">
+          Your browser does not support iframes.
+      </iframe>
+      <p class="note">If you see a “refused to connect” message here, the site is blocking iframes via <code>X-Frame-Options</code> or <code>Content-Security-Policy</code>. Try another public page that allows embedding.</p>
+    </section>
+
+    <section aria-labelledby="video-heading">
+      <h2 id="video-heading">Embedded Video (YouTube)</h2>
+      <p>This iFrame embeds an educational, open-license video (Big Buck Bunny – Blender Foundation).</p>
+
+      <div class="video-wrap" role="group" aria-label="Responsive video wrapper">
+        <iframe
+          class="video-frame"
+          title="Big Buck Bunny — 4K (Blender Foundation)"
+          src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+            Your browser does not support iframes.
+        </iframe>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Accessibility notes:</strong> Both iframes include descriptive <code>title</code> attributes, large readable dimensions, and consistent visual styling.</p>
+    </footer>
+  </main>
+</body>
+</html>
