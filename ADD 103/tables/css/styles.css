@@ -1,0 +1,182 @@
+/* 🌈 POMPOMOUSE GLOBALS */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
+  color: #333;
+  text-align: center;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  padding: 12px;
+  border-bottom: 3px solid #ffb6c1;
+}
+
+nav a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff69b4;
+}
+
+h1 {
+  color: #ff69b4;
+  text-shadow: 1px 1px 2px #fff;
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+/* ------------------------------------------------------------ */
+/* 📅 CALENDAR TABLE */
+table.calendar {
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 90%;
+  margin: 0 auto 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.calendar th {
+  background: linear-gradient(135deg, #add8e6, #f3b9ff);
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+.calendar td {
+  height: 80px;
+  border-radius: 12px;
+  background-color: #fff;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.3s ease;
+  vertical-align: top;
+  text-align: right;
+  padding: 8px 10px;
+}
+
+.calendar td.weekend {
+  background-color: #ffe4e1; /* baby pink */
+  color: #d63384;
+}
+
+.calendar td:hover {
+  transform: scale(1.05);
+  background-color: #fef9c3; /* pastel yellow glow */
+  color: #000;
+}
+
+.calendar td.birthday {
+  background: radial-gradient(circle, #ffecb3, #ffb6c1, #b5fffc);
+  font-weight: bold;
+  color: #000;
+  border: 2px solid #ff69b4;
+  box-shadow: 0 0 10px #ff69b4;
+  transform: scale(1.05);
+}
+
+/* shimmer effect for headers */
+@keyframes shimmerMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.calendar th {
+  background: linear-gradient(135deg, #add8e6, #f3b9ff, #fff7b3);
+  background-size: 200% 200%;
+  animation: shimmerMove 8s infinite ease-in-out;
+}
+
+/* ------------------------------------------------------------ */
+/* 📘 MAIN TABLE (index.html) */
+.main-table {
+  width: 90%;
+  margin: 0 auto 50px;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 182, 217, 0.4);
+  overflow: hidden;
+}
+
+.main-table th,
+.main-table td {
+  border: 2px solid #fff0fa;
+  padding: 10px;
+}
+
+.main-table th {
+  background: linear-gradient(90deg, #ffcce6, #b3ecff);
+  color: #333;
+}
+
+.main-table tr:nth-child(even) {
+  background: rgba(255, 247, 179, 0.4);
+}
+
+.main-table tr:hover {
+  background: linear-gradient(90deg, #fff7b3, #b3ecff);
+  transition: background 0.5s ease;
+}
+
+/* ------------------------------------------------------------ */
+/* 🎨 STYLING DEMO TABLE (styling.html) */
+.styled-demo {
+  width: 80%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 182, 217, 0.4);
+}
+
+.styled-demo th {
+  background: linear-gradient(135deg, #ffb6c1, #b3ecff);
+  color: #333;
+  padding: 10px;
+}
+
+.styled-demo td {
+  padding: 12px;
+  border: 1px solid #fff;
+  background-color: #fffef5;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.styled-demo tr:nth-child(even) td {
+  background-color: #fffcf8;
+}
+
+.styled-demo td:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #fff7b3, #ffcce6);
+  color: #333;
+}
+
+/* ------------------------------------------------------------ */
+/* 🌟 Responsiveness */
+@media (max-width: 640px) {
+  table {
+    font-size: 0.9rem;
+  }
+  .calendar td {
+    height: 60px;
+  }
+}

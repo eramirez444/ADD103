@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Table Basics</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Table Basics</a> |
+      <a href="styling.html">Styling Tables</a> |
+      <a href="calendar.html">Calendar Project</a>
+    </nav>
+
+    <h1>Table Basics with Colspan and Rowspan</h1>
+
+    <!-- Seven columns x seven rows example demonstrating colspan and rowspan -->
+    <table class="main-table" aria-label="Week planning table">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Task 1</th>
+          <th>Task 2</th>
+          <th>Task 3</th>
+          <th>Task 4</th>
+          <th>Task 5</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Week 1</th>
+          <td colspan="2">Project Planning</td>
+          <td>Research</td>
+          <td>Setup</td>
+          <td>Team Intro</td>
+          <td>Kickoff</td>
+        </tr>
+
+        <tr>
+          <th rowspan="2">Week 2</th>
+          <td>Design</td>
+          <td>Development</td>
+          <td>Testing</td>
+          <td colspan="2">Code Review</td>
+          <td rowspan="2">Weekly Sync</td>
+        </tr>
+
+        <tr>
+          <!-- continues the rowspan from Week 2 -->
+          <td colspan="3">Team Meeting (all)</td>
+          <td>Documentation</td>
+          <td>Feedback</td>
+        </tr>
+
+        <tr>
+          <th>Week 3</th>
+          <td>Launch Prep</td>
+          <td>Final QA</td>
+          <td colspan="2">Deployment</td>
+          <td colspan="2">Celebration</td>
+        </tr>
+
+        <tr>
+          <th>Week 4</th>
+          <td colspan="6">Project Wrap-Up and Retrospective</td>
+        </tr>
+
+        <tr>
+          <th>Bonus</th>
+          <td>Research</td>
+          <td>Prototype</td>
+          <td>Tests</td>
+          <td>Review</td>
+          <td>Release</td>
+          <td>Archive</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
