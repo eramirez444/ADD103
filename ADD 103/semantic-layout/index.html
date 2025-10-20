@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<h2>Float‑Based Columns</h2>
+</header>
+<p>Before Flexbox/Grid, floats positioned columns. Here, the left nav and right aside are floated; the footer clears them to avoid overlap.</p>
+<pre class="code">
+/***** key bits *****/
+.side-nav { float: left; width: 20%; }
+.sidebar { float: right; width: 24%; }
+.content { margin: 0 26% 0 22%; /* space for floats */ }
+footer.site-footer { clear: both; }
+</pre>
+</section>
+
+
+<section id="details" class="card">
+<header>
+<h2>Expandable Details</h2>
+</header>
+<details>
+<summary>How does <code>clear: both;</code> work?</summary>
+<p>It forces the element to sit below any left/right floats, preventing overlap. We apply it to the footer.</p>
+</details>
+<details>
+<summary>Why not just use Flexbox/Grid?</summary>
+<p>Flexbox/Grid are modern and preferred, but floats are important for maintaining legacy layouts and understanding CSS history.</p>
+</details>
+</section>
+
+
+<article id="articles" class="card">
+<header>
+<h2>Sample Article</h2>
+</header>
+<p>This is a self‑contained piece of content using semantic markup. Replace with your assignment copy.</p>
+</article>
+
+
+<section id="resources" class="card">
+<header>
+<h2>Resources</h2>
+</header>
+<ul class="resource-list">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">MDN: HTML Elements</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats" target="_blank" rel="noopener">MDN: Floats</a></li>
+</ul>
+</section>
+
+
+<section id="contact" class="card">
+<header>
+<h2>Contact</h2>
+</header>
+<p>Questions? Email <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+</section>
+</main>
+
+
+<aside class="sidebar" aria-label="Tips">
+<h2 class="side-title">Quick Tips</h2>
+<ul>
+<li>Use semantic tags for structure.</li>
+<li>Give links clear focus states.</li>
+<li>Ensure color contrast meets WCAG.</li>
+</ul>
+<div class="note">Neon‑pastel palette inspired by MARINA’s <em>FROOT</em> era.</div>
+</aside>
+
+
+</div><!-- /.layout-wrap -->
+
+
+<footer class="site-footer" role="contentinfo">
+<small>© <span id="year"></span> Celestial Byte Studio · Built with semantic HTML</small>
+</footer>
+
+
+<script>
+// Accessible, simple enhancement
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
