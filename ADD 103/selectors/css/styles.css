@@ -1,0 +1,134 @@
+/* 🍊 Fruity "Pamplemousse" Theme Palette */
+:root {
+  --grapefruit: #ff8a8a;
+  --peach: #ffe8dd;
+  --lemon: #ffe76a;
+  --melon: #ffd1c7;
+  --kiwi: #55b891;
+  --blueberry: #a3c4f3;
+  --plum: #4b3190;
+  --pith: #fff9f6;
+}
+
+/* Global Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--plum);
+  background-color: var(--pith);
+}
+
+/* Layout Containers */
+.container {
+  max-width: 960px;
+  margin: 16px auto;
+  padding: 16px;
+  border: 4px solid var(--plum);
+  background-color: var(--pith);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(75, 49, 144, 0.1);
+}
+
+/* 🍉 Section Backgrounds */
+header {
+  background: linear-gradient(135deg, var(--peach), var(--melon));
+}
+nav {
+  background: linear-gradient(135deg, var(--kiwi), var(--lemon));
+}
+main {
+  background: linear-gradient(135deg, var(--melon), var(--grapefruit));
+}
+aside {
+  background: linear-gradient(135deg, var(--blueberry), var(--kiwi));
+}
+footer {
+  background: linear-gradient(135deg, var(--grapefruit), var(--peach));
+}
+
+/* Nav Styling */
+.nav-list {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: var(--pith);
+  color: var(--plum);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--plum);
+}
+
+.nav-list a:hover {
+  background-color: var(--grapefruit);
+  color: white;
+}
+
+/* 🍋 Class Styles */
+.highlight {
+  color: var(--plum);
+  background: var(--lemon);
+  border-left: 5px solid var(--grapefruit);
+  padding: 8px 10px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.special-text {
+  background: var(--peach);
+  font-style: italic;
+  color: var(--plum);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* 🍓 ID Styles */
+#feature {
+  color: var(--pith);
+  background: var(--grapefruit);
+  border: 3px solid var(--plum);
+  font-size: 1.05rem;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#note {
+  color: var(--plum);
+  background-color: var(--lemon);
+  border-left: 4px solid var(--plum);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+/* Accessibility Focus States */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--blueberry);
+  outline-offset: 2px;
+}
+
+/* Optional code element styling */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: var(--pith);
+  padding: 2px 4px;
+  border-radius: 3px;
+}

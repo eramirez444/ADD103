@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pamplemousse Selectors & Semantics</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="container" id="site-header">
+      <h1>Pamplemousse</h1>
+      <p class="special-text">
+        A citrus spin on semantic HTML and CSS selectors
+      </p>
+    </header>
+
+    <nav aria-label="Primary" class="container">
+      <ul class="nav-list">
+        <li><a href="#content">Main</a></li>
+        <li><a href="#sidebar">Aside</a></li>
+        <li><a href="#site-footer">Footer</a></li>
+      </ul>
+    </nav>
+
+    <main class="container" id="content">
+      <article>
+        <h2>Why Semantics Matter</h2>
+        <p class="highlight">
+          Semantic tags give structure and meaning to your page — the same way
+          each fruit brings its own flavor.
+        </p>
+
+        <p class="highlight" id="feature">
+          This paragraph uses both a class and an ID. The ID styles take the
+          lead, giving it a stronger look.
+        </p>
+
+        <section>
+          <h3>Reusable Classes</h3>
+          <p class="special-text">
+            Classes are like your go-to ingredients — you can use them anywhere
+            you need a familiar touch.
+          </p>
+        </section>
+
+        <section>
+          <h3>Unique IDs</h3>
+          <p id="note">
+            IDs are for one-of-a-kind elements. They’re your special pieces that
+            stand out from the rest.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <aside class="container" id="sidebar">
+      <h2>Aside</h2>
+      <p>Extra details and fun little notes live here.</p>
+      <p class="highlight">This paragraph also uses the highlight class.</p>
+    </aside>
+
+    <footer class="container" id="site-footer">
+      <p>&copy; 2025 Pamplemousse Design</p>
+    </footer>
+  </body>
+</html>
