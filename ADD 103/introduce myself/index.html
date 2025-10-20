@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elle Ramirez — Home</title>
+    <meta
+      name="description"
+      content="Introduce Yourself: Elle Ramirez — Software Application Design & Development student. Plants, baking, writing, and the great outdoors."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="theme-froot">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site" role="banner">
+      <div class="wrap">
+        <nav class="primary" aria-label="Primary">
+          <a class="brand" href="index.html">
+            <span class="logo" aria-hidden="true"></span>
+            <span>Elle</span>
+          </a>
+          <div class="menu">
+            <a href="index.html" aria-current="page">🍊 Home</a>
+            <a href="pages/about.html">🍑 About</a>
+            <a href="pages/gallery.html">🍇 Gallery</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="card hero grid cols-2">
+        <figure class="hero-media pop">
+          <img
+            class="hero-img"
+            src="images/portrait.jpg"
+            width="700"
+            height="500"
+            alt="Portrait of Elle Ramirez smiling"
+          />
+          <figcaption class="muted">Hi! I’m Elle.</figcaption>
+        </figure>
+
+        <div class="hero-text">
+          <h1 class="neon-title">Hi, I’m Elle <span class="spark">🍊</span></h1>
+          <p>
+            I’m studying
+            <strong>Software Application Design &amp; Development</strong> at
+            McHenry County College. I love the mix of visual design and
+            code—clean HTML/CSS, accessible interfaces, and playful,
+            fruit-forward palettes.
+          </p>
+          <p class="muted">
+            When I’m not building class projects, I’m nurturing plants, writing
+            short horror stories, baking cupcakes, or hiking forest preserves
+            with my partner.
+          </p>
+          <div class="pills" aria-label="Quick highlights">
+            <span class="pill">🍋 HTML/CSS</span>
+            <span class="pill">🍑 Branding</span>
+            <span class="pill">🍇 Accessibility</span>
+            <span class="pill">🍓 Illustrator</span>
+          </div>
+          <a class="btn glow" href="pages/gallery.html">See the Gallery</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title neon-underline">Details & Statistics 🍎</h2>
+        <div class="stats">
+          <div class="stat"><strong>Name:</strong> Elle Ramirez</div>
+          <div class="stat">
+            <strong>Based in:</strong> McHenry County, Illinois (born in
+            Libertyville)
+          </div>
+          <div class="stat">
+            <strong>Program:</strong> Software Application Design &amp;
+            Development (MCC)
+          </div>
+          <div class="stat">
+            <strong>Current focus:</strong> HTML/CSS fundamentals, semantic
+            structure, accessibility
+          </div>
+          <div class="stat">
+            <strong>Interests:</strong> plants, baking, hiking, poetry &amp;
+            horror writing
+          </div>
+          <div class="stat">
+            <strong>Vibe:</strong> neon pastels &amp; cozy fruit tones
+          </div>
+        </div>
+      </section>
+
+      <section class="card grid cols-2">
+        <div>
+          <h2 class="section-title neon-underline">
+            What I’m Working Toward 🎯
+          </h2>
+          <p>
+            Long-term, I’d like to build software that’s easy to understand and
+            enjoyable to use—tools that help people get their work done without
+            getting in the way. I’m building strong foundations in structure and
+            style: semantic HTML, thoughtful CSS, and patterns I can reuse
+            across projects.
+          </p>
+          <ul class="list-check">
+            <li>Grow a portfolio of accessible, responsive layouts</li>
+            <li>Practice component thinking and clean file structure</li>
+            <li>Blend graphics knowledge with front-end craft</li>
+          </ul>
+        </div>
+        <figure class="pop">
+          <img
+            src="images/berries.jpg"
+            width="700"
+            height="500"
+            alt="Fresh raspberries and blueberries from Elle’s backyard"
+          />
+          <figcaption class="muted">
+            Backyard berries—my favorite color palette inspiration.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="wrap">
+        <hr />
+        <p>
+          © <span id="y"></span> Elle Ramirez · Built with semantic HTML,
+          accessible CSS, and FROOT energy 🍋
+        </p>
+      </div>
+      <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>

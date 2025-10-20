@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elle Ramirez — About</title>
+    <meta
+      name="description"
+      content="About Elle Ramirez: Illinois roots, plant love, software goals, and study path in Software Application Design & Development."
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="theme-froot">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site" role="banner">
+      <div class="wrap">
+        <nav class="primary" aria-label="Primary">
+          <a class="brand" href="../index.html">
+            <span class="logo" aria-hidden="true"></span>
+            <span>Elle</span>
+          </a>
+          <div class="menu">
+            <a href="../index.html">🍊 Home</a>
+            <a href="about.html" aria-current="page">🍑 About</a>
+            <a href="gallery.html">🍇 Gallery</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="card grid cols-2">
+        <div>
+          <h1 class="section-title neon-underline">About Me 🍑</h1>
+
+          <h3 class="sub neon-pill">🌼 A Love for Plants</h3>
+          <p>
+            I grew up surrounded by flowers and fruit bushes—marigolds,
+            lily-of-the-valley, honeysuckle, raspberries, and blueberries.
+            Gardening taught me patience and process, which translate nicely
+            into design and development. When things grow, it’s because you
+            prepared the soil, tended the basics, and stayed consistent—just
+            like learning code.
+          </p>
+          <figure class="pop">
+            <img
+              src="../images/honeysuckle.jpg"
+              width="700"
+              height="500"
+              alt="Close-up of honeysuckle plant in bloom"
+            />
+            <figcaption class="muted">
+              Honeysuckle: the fragrance of summer evenings.
+            </figcaption>
+          </figure>
+
+          <h3 class="sub neon-pill">🗺️ Illinois Roots & Travel Goals</h3>
+          <p>
+            I was born in Libertyville and have lived in the McHenry County area
+            most of my life. I’d love to travel more and collect reference
+            photos, textures, and color palettes from different places—fuel for
+            future projects and designs.
+          </p>
+
+          <h3 class="sub neon-pill">💻 What I’m Studying</h3>
+          <p>
+            I’m in the
+            <strong>Software Application Design &amp; Development</strong>
+            program at McHenry County College. I’m strengthening my foundation
+            in semantic HTML and modern CSS, focusing on structure,
+            accessibility, and clear, readable code. My goal is to apply these
+            fundamentals to bigger projects over time.
+          </p>
+        </div>
+
+        <aside class="card glass">
+          <h2 class="section-title neon-underline">Quick Facts 🍎</h2>
+          <ul class="list-dots">
+            <li>
+              <strong>Program:</strong> Software Application Design &amp;
+              Development (MCC)
+            </li>
+            <li><strong>Focus:</strong> HTML/CSS, semantics, accessibility</li>
+            <li>
+              <strong>Interests:</strong> baking, hiking, poetry, horror writing
+            </li>
+            <li><strong>Palette:</strong> neon pastels &amp; citrus accents</li>
+          </ul>
+          <figure style="margin-top: 1rem" class="pop">
+            <img
+              src="../images/berries.jpg"
+              width="700"
+              height="500"
+              alt="Backyard raspberries and blueberries in a bowl"
+            />
+            <figcaption class="muted">
+              Backyard harvests often become gifts for friends.
+            </figcaption>
+          </figure>
+        </aside>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="wrap">
+        <hr />
+        <p>© <span id="y"></span> Elle Ramirez · Thanks for reading!</p>
+      </div>
+      <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>

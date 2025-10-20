@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elle Ramirez — Gallery</title>
+    <meta
+      name="description"
+      content="Gallery of Elle’s interests: writing, hiking, and baking, with images and descriptions."
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="theme-froot">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site" role="banner">
+      <div class="wrap">
+        <nav class="primary" aria-label="Primary">
+          <a class="brand" href="../index.html">
+            <span class="logo" aria-hidden="true"></span>
+            <span>Elle</span>
+          </a>
+          <div class="menu">
+            <a href="../index.html">🍊 Home</a>
+            <a href="about.html">🍑 About</a>
+            <a href="gallery.html" aria-current="page">🍇 Gallery</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="card">
+        <h1 class="section-title neon-underline">Hobbies & Highlights 🍉</h1>
+        <div class="gallery">
+          <figure class="pop">
+            <img
+              src="../images/journal.jpg"
+              width="700"
+              height="500"
+              alt="Elle’s open notebook and pen for writing poetry"
+            />
+            <figcaption class="muted">
+              <strong>Writing:</strong> Poetry and short horror stories let me
+              explore mood, voice, and rhythm—skills that also help me write
+              clear UI text.
+            </figcaption>
+          </figure>
+
+          <figure class="pop">
+            <img
+              src="../images/hiking.jpg"
+              width="700"
+              height="500"
+              alt="Forest preserve trail in McHenry County"
+            />
+            <figcaption class="muted">
+              <strong>Hiking:</strong> Nature clears my head and inspires color
+              choices. Trails connecting towns make the best day trips.
+            </figcaption>
+          </figure>
+
+          <figure class="pop">
+            <img
+              src="../images/baking.jpg"
+              width="700"
+              height="500"
+              alt="Cupcakes baked by Elle Ramirez"
+            />
+            <figcaption class="muted">
+              <strong>Baking:</strong> Precise steps, repeatable results—very
+              similar to coding. Cupcakes are my favorite mini-project.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title neon-underline">Plants & Backyard Life 🌼</h2>
+        <div class="grid cols-2">
+          <figure class="pop">
+            <img
+              src="../images/honeysuckle.jpg"
+              width="700"
+              height="500"
+              alt="Honeysuckle flower close-up with soft background"
+            />
+            <figcaption class="muted">
+              Honeysuckle — a reminder to slow down and enjoy the details.
+            </figcaption>
+          </figure>
+          <figure class="pop">
+            <img
+              src="../images/portrait.jpg"
+              width="700"
+              height="500"
+              alt="Portrait of Elle Ramirez smiling"
+            />
+            <figcaption class="muted">
+              Hello! Thanks for visiting my site.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="wrap">
+        <hr />
+        <p>
+          © <span id="y"></span> Elle Ramirez · Fruit-glow vibes, clean code.
+        </p>
+      </div>
+      <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>
